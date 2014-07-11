@@ -1,0 +1,24 @@
+<br>
+
+<div class="container">
+	<input can-keyup="filter" class="form-control" placeholder="filter" type="text">
+
+	<h3>Demos</h3>
+	<ul class="list-unstyled">
+		{{#demos}}
+		<li class="{{#hide}}hidden{{/}}">
+		<a href="{{path}}" target="_blank">{{path}}</a><br>
+		</li>
+		{{/demos}}
+	</ul>
+
+	<h3>Tests</h3>
+	<ul class="list-unstyled">
+		{{#tests}}
+		<li class="{{#hide}}hidden{{/}}">
+		<a href="{{path}}" target="_blank">{{path}}</a><br>
+		</li>
+		{{/tests}}
+	</ul>
+
+</div>

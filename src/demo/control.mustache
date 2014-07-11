@@ -1,0 +1,14 @@
+<div>
+	{{#if showMenu}}
+	<div class="demoMenu">
+		&nbsp; {{names.length}} demos
+		<small><small><a href="#" class="hide-demo pull-right">[X]&nbsp;</a></small></small>
+		<ul class="nav nav-tabs nav-stacked">
+			{{#names}}
+			<li class="demo"><a href="#!{{fixtureId}}">{{{.}}}</a></li>
+			{{/names}}
+		</ul>
+	</div>
+	{{/if}}
+	<div class="demoHook"></div>
+</div>

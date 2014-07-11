@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/mocha/mocha.css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="mocha"></div>
+<script src="/vendor-test.js"></script>
+<script>
+mocha.setup('tdd');
+eq = chai.assert.equal;
+ff = chai.assert.notOk;
+tt = chai.assert.ok;
+</script>
+<script src="test.js"></script>
+<script>(window.mochaPhantomJS ? mochaPhantomJS : mocha).run();</script>
+<script src="//localhost:2002/livereload.js?snipver=1"></script>
+</body>
+</html>
