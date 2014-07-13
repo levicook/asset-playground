@@ -3,10 +3,10 @@ SHELL := /bin/bash
 SRC_JS        := $(shell find src -type f -name '*.js')
 SRC_LESS      := $(shell find src -type f -name '*.less')
 
-SRC_PAGE_LESS := $(shell find src/*/pages -type f -name 'main.less')
+SRC_PAGE_LESS := $(shell find src/pages -type f -name 'main.less')
 DST_PAGE_CSS  := $(SRC_PAGE_LESS:src/%.less=dist/%.css)
 
-SRC_PAGE_JS   := $(shell find src/*/pages -type f -name 'main.js')
+SRC_PAGE_JS   := $(shell find src/pages -type f -name 'main.js')
 DST_PAGE_JS   := $(SRC_PAGE_JS:src/%.js=dist/%.js)
 
 #-------------

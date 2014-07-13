@@ -1,10 +1,10 @@
 'use strict';
 
 var rhtml  = require('rhtml');
-var demand = require('../../../demand');
+var demand = require('../../demand');
 
-var Footer = require('../../controls/footer');
-var Header = require('../../controls/header');
+var SiteFooter = require('../../controls/site_footer');
+var SiteHeader = require('../../controls/site_header');
 
 
 function validateOptions(options) {
@@ -25,9 +25,8 @@ module.exports = can.Control.extend({
 
         element.append(options.view(this.model));
 
-        this.header = new Header(element.find('.headerHook'));
-
-        this.footer = new Footer(element.find('.footerHook'));
+        this.siteHeader = new SiteHeader(element.find('.siteHeaderHook'));
+        this.siteFooter = new SiteFooter(element.find('.siteFooterHook'));
     },
 
 });

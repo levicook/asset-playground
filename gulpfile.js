@@ -147,7 +147,7 @@ gulp.task('express', function () {
             'vendor-main.js': 'vendor-main.js'
         };
 
-        glob('./src/*/pages/**/main.{js,less}', function (err, files) {
+        glob('./src/pages/**/main.{js,less}', function (err, files) {
             if (err) {
                 res.json(500, err);
                 return;

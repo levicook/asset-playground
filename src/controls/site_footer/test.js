@@ -10,7 +10,7 @@ suite(location.pathname, function () {
         control = new Control(element);
     });
 
-    test('appended .main-footer', function () {
-        tt(element.find('.main-footer').is('*'));
+    test('appended .site_footer', function () {
+        tt(element.find('.site_footer').is('*'));
     });
 });
